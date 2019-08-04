@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 const NavBar=(props)=>{
   
   const token=localStorage.getItem('token');
-  console.log(token);
   return(
       <nav className="navbar navbar-light bg-light">
           <a className="navbar-brand">React App</a>

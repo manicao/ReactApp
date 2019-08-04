@@ -5,6 +5,7 @@ import { actionsList } from '../actions/actionsList';
 import { actionID, actionPricePlus,actionPriceLow } from '../actions/actionFilter';
 import functionFilter from '../utils/functionFilter';
 import NavBar from '../components/NavBar';
+import { logout } from '../actions/actionsUser';
 
 class ListPage extends Component{
 
@@ -109,7 +110,8 @@ const actionCreators = {
     getList: actionsList,
     actionID:actionID,
     actionPricePlus:actionPricePlus,
-    actionPriceLow:actionPriceLow
+    actionPriceLow:actionPriceLow,
+    logout:logout
 }
 
 export default connect(mapStateToProps,actionCreators)(ListPage); 
