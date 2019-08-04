@@ -40,8 +40,9 @@ class Login extends Component{
     const{alert}=this.props
     return (
       <div className="jumbotron">
-      <div className="row justify-content-md-center">
-        <div>
+      <div className="container">
+      <div className="form-group row justify-content-md-center">
+        <div className="col-lg-4 ">
           {alert.message &&
               <div className={`alert ${alert.type}`}>{alert.message}</div>
           }
@@ -70,6 +71,8 @@ class Login extends Component{
           </form>
         </div>
       </div>
+      </div>
+      
       </div>
     )
   }

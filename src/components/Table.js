@@ -4,17 +4,17 @@ const Table=(props)=>{
 
   const {list}=props;
   return (
-    <div>
+    <div className="table-responsive">
      {list ?
         (
             <table className="table table-striped">
               <thead>
                 <tr>
-                  <th>BookingId</th>
-                  <th>Cliente</th>
-                  <th>Fecha de Creación</th>
-                  <th>Dirección</th>
-                  <th>Precio</th>
+                  <th scope="col">BookingId</th>
+                  <th scope="col">Cliente</th>
+                  <th scope="col">Fecha de Creación</th>
+                  <th scope="col">Dirección</th>
+                  <th scope="col">Precio</th>
                 </tr>
               </thead>
               <tbody>

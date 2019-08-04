@@ -58,39 +58,43 @@ class ListPage extends Component{
           <NavBar action={this.props.logout} />
           <div className="jumbotron">
           <div className="container">
-          <div className="col-lg-12 ">
-            
-            <div>
+            <div className="col-lg-12 ">
               <div>
-                <h3>Filter By</h3>
-                <div className="form-row">
-                  <div className="form-group col-md-2">
-                    <input type="text" className="form-control" id="inputBookingId" 
-                       placeholder="BookingId"
-                       onChange={this.handleBookingId}
-                  />
-                  </div>
-                  <div className="form-group col-md-2">
-                  <input type="text" className="form-control" id="inputPrecio" 
-                       placeholder="Precio >="
-                       onChange={this.handleBookingPricePlus}
-                  />
-                  </div>
-                  <div className="form-group col-md-2">
-                  <input type="text" className="form-control" id="inputPrecio" 
-                       placeholder="Precio <="
-                       onChange={this.handleBookingPriceLow}
-                  />
-                  </div>
-                  <div className="form-group col-md-4">
-                    <button type="submit" className="btn btn-primary" onClick={this.handleFilter}>Filter</button>
+                <div>
+                  <h3>Filter By</h3>
+                  <div className="form-row">
+                    <div className="form-group col-md-2">
+                      <input type="text" className="form-control" id="inputBookingId" 
+                        placeholder="BookingId"
+                        onChange={this.handleBookingId}
+                    />
+                    </div>
+                    <div className="form-group col-md-2">
+                    <input type="text" className="form-control" id="inputPrecio" 
+                        placeholder="Precio >="
+                        onChange={this.handleBookingPricePlus}
+                    />
+                    </div>
+                    <div className="form-group col-md-2">
+                    <input type="text" className="form-control" id="inputPrecio" 
+                        placeholder="Precio <="
+                        onChange={this.handleBookingPriceLow}
+                    />
+                    </div>
+                    <div className="form-group col-md-4">
+                      <button type="submit" className="btn btn-primary" onClick={this.handleFilter}>Filter</button>
+                    </div>
                   </div>
                 </div>
+                <br/>
+                
+                
               </div>
-              <br/>
+             
+          </div>
+          <div className="col-lg-12 ">
               <Table {...this.props.listFilter}/>
-            </div>
-        </div>
+          </div>
         </div>
         </div>
         </div>
